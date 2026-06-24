@@ -479,7 +479,7 @@ contract WooSuperChargerVaultV2 is ERC20, Ownable, Pausable, ReentrancyGuard {
 
         if (requestUsers.length() == 0) {
             // NOTE: all settling finished
-            isSettling == false;
+            isSettling = false;
 
             instantWithdrawnAmount = 0;
             lendingManager.accureInterest();
